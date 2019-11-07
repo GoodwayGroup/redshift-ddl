@@ -7,7 +7,8 @@
     "test": "jest",
     "commit": "npx git-cz",
     "lint": "eslint .",
-    "lint:fix": "eslint --fix ."
+    "lint:fix": "eslint --fix .",
+    "version": "auto-changelog -p -l false --template keepachangelog && git add CHANGELOG.md"
   },
   "bin": "bin/redshift-ddl.js",
   "repository": {
@@ -27,13 +28,12 @@
   },
   "homepage": "https://github.com/GoodwayGroup/redshift-ddl#readme",
   "devDependencies": {
+    "auto-changelog": "^1.16.2",
     "cz-conventional-changelog": "^3.0.2",
     "eslint": "^6.6.0",
     "eslint-config-goodway": "^2.1.0",
     "eslint-plugin-import": "^2.18.2",
-    "jest": "^24.9.0",
-    "jsdoc-to-markdown": "^5.0.2",
-    "typedoc": "^0.15.0"
+    "jest": "^24.9.0"
   },
   "config": {
     "commitizen": {
